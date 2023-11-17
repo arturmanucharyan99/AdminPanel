@@ -6,17 +6,13 @@ import axios from "axios";
 
 export const editUserGet = createAsyncThunk(
     "editUser/editUserGet",
-    async function (userId,{rejectWithValue}) {
-        try {
+    async function (userId, { rejectWithValue }) {
 
-            const { data } = await axios.post('http://localhost:8000/edit-user-get', {
-                userId: userId
-            });
+        const { data } = await axios.post('http://localhost:8000/edit-user-get', {
+            userId: userId
+        });
 
-            return data;
-        } catch (error) {
-            return error.response.data
-        //    return rejectWithValue(error);
-        }
+        return data;
+
     }
 )

@@ -24,8 +24,10 @@ function AddUser({ }) {
 
 
   useEffect(()=>{
-    if()
-  },[])
+    if(editUser?.error){
+      navigate('/NotFound')
+    }
+  },[editUser?.error])
   // console.log(editUser?.error);
 
   useEffect(() => {
