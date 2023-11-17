@@ -1,0 +1,81 @@
+.add-user-container {
+    width: 100%;
+    height: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.form-add {
+    width: 450px;
+    height: 100%;
+    border-radius: 17px;
+    background: #fff;
+    padding: 40px;
+    z-index: 5 !important;
+
+}
+
+.commonInput {
+    margin-top: 15px;
+    width: 100%;
+}
+
+.commonInput > input {
+    width: 100%;
+    border-radius: 8px;
+    border: 2px solid #C6C6C6;
+    padding: 15px;
+    background: #FFF;
+}
+.add-button{
+    margin-top: 15px;
+    width: 100%;
+}
+
+.add-button > button{
+    width: 100%;
+    border-radius: 8px;
+    border: 2px solid #C6C6C6;
+    padding: 15px;
+    color: white;
+    background: #3F70F4;
+}
+
+.checkboxDiv{
+    display: flex;
+    align-items: center;
+}
+
+.checkboxDiv > label{
+    height: 25px;
+    margin-left: 5px;
+}
+
+.errorMessage{
+    width: 100%;
+    display: flex;
+    margin-top: 10px;
+    justify-content: center;
+    color: red;
+}
+/* .checkboxDiv >input{
+    height: 25px;
+} */
+
+@media (max-width:1024px) {
+    .form-add {
+        width: 350px;
+        height: 450px;
+        padding: 20px;
+    }
+
+    .commonInput > input{
+        padding: 8px;
+    }
+    .add-button > button{
+        padding: 12px;
+
+    }
+}
