@@ -1,4 +1,4 @@
-# Admin
+# AdminPanel
 
 This repository contains a project that includes a Node.js backend with MongoDB and a React frontend.
 
