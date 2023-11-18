@@ -43,6 +43,22 @@
 
 }
 
+.users-empty{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 50px;
+}
+
+.search-emty{
+    font-size: 50px;
+    color: #fff;
+    margin-top: 20px;
+
+}
+
 
 @media  (max-width:1024px) {
     .info-user{
@@ -61,5 +77,14 @@
     }
     .info-user p{
         width: 150px;
+    }
+    .users-empty{
+        font-size: 35px;
+        text-align: center;
+
+    }
+    .search-emty{
+        font-size: 35px;
+        text-align: center;
     }
 }

@@ -29,6 +29,11 @@ function Home() {
             user.lastName.toLowerCase().includes(searchQuery.toLowerCase())
     );
 
+    
+    if(users.length === 0){
+        return <h1 className='users-empty'>We don't have users</h1>
+    }
+
     if(error){
         return <Error/>
     }
@@ -47,6 +52,9 @@ function Home() {
                 </form>
             </div>
             <div className='div-container common'>
+                {
+                    filteredUsers.length === 0 && <h1 className='search-emty'>We don't have a user with that name</h1> 
+                }
                 {
                     loading ? <MoonLoader color='#fff' size={100}/> : 
                         <div>
