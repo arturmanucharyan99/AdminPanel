@@ -8,11 +8,11 @@ To run this project locally, please follow these steps:
 
 # Backend Setup
 
-1.git clone
+1.git clone:
 git clone https://github.com/arturmanucharyan99/AdminPanel.git
 
 2.Navigate to the backend directory:
-cd Admin/server
+cd AdminPanel/server
 
 3.Install dependencies:
 npm install
