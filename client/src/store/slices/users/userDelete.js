@@ -8,11 +8,7 @@ export const userDelete = createAsyncThunk(
     async function(userId){
         try {
             // console.log(userId);
-            const response = await axios.delete('http://127.0.0.1:8000/delete-user',{
-                data:{
-                    userId:userId
-                }
-            });
+            const response = await axios.delete(`http://127.0.0.1:8000/delete-user/${userId}`);
 
             return userId;
             

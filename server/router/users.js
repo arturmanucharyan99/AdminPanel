@@ -16,7 +16,7 @@ router.post('/edit-user-get',UsersController.editUserGet);
 
 router.patch('/upadate-user',userUpdateValidation,UsersController.updateUser);
 
-router.delete('/delete-user',UsersController.deleteUser);
+router.delete('/delete-user/:userId',UsersController.deleteUser);
 
 
 
