@@ -1,4 +1,4 @@
-import { ObjectId } from "mongodb";
+// import { ObjectId } from "mongodb";
 import Users from "../model/users.js";
 import mongoose from "mongoose";
 import { validationResult } from 'express-validator'
@@ -69,8 +69,7 @@ class UsersController {
     }
 
     async deleteUser(req, res, next) {
-        const { userId } = req.body;
-        // console.log(userId);
+        const { userId } = req.params;
         try {
             if (!mongoose.Types.ObjectId.isValid(userId)) {
                 return res.status(400).json({ error: 'Invalid user ID' });
@@ -79,7 +78,7 @@ class UsersController {
             const result = await Users.findByIdAndDelete(userId);
             // console.log(result);
 
-            return res.status(200).json("succses");
+            return res.status(200).json({message:"succses"});
 
         } catch (error) {
             console.log(error);
